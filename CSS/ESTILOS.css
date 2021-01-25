@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-dark: #170312;
+    --purple-medium: #33032d;
+    --purple-light: #531253;
+    --gray-light: #eaeaea;
+    --white: #f4fffd;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 22px;
+}
+
+.CONTENIDO-HEADER {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../IMG/PORTADA.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.CONTENIDO-HEADER .FONDO {
+    width: 0%;
+    height: 100%;
+    max-width: 100%;
+    background-image: url(../IMG/HOJAS.png);
+}
+
+.CONTENIDO-HEADER .TEXTO {
+    width: calc(100vw - 20px);
+    height: 100vh;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: purple;
+    mix-blend-mode: multiply;
+}
+
+.MENU {
+    background-color:  var(--purple-medium);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+.MENU a {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 26px;
+    background-color: var(--purple-medium);
+    margin: 0 10px;
+    transition: .5s ease all;
+    color: var(--gray-light);
+    text-decoration: none;
+}
+
+.MENU a:hover {
+	transform: translateY(18px);
+    background-color: var(--purple-light);
+}
+
+.NOSOTROS {
+	margin-bottom: 60px;
+}
+
+.SUBTITULO {
+	font-size: 20px;
+	color: var(--purple-dark);
+	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+	z-index: 2;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.SUBTITULO span {
+	background-color: var(--gray-light);
+	padding: 0 15px;
+	z-index: 99;
+	position: relative;
+}
+
+.SUBTITULO::after {
+	content: "";
+	display: inline-block;
+	height: 2px;
+	width: 100%;
+	background: var(--purple-dark);
+	position: relative;
+	top: -29px;
+	z-index: 1;
+}
+
+.NOSOTROS .TITULO {
+	width: 70%;
+	font-size: 44px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.NOSOTROS .ENLACE  {
+	display: inline-block;
+	margin-top: 40px;
+	color: var(--purple-light);
+	font-weight: 700;
+	border-bottom: 1px solid transparent;
+	transition: .3s ease all;
+}
+
+.NOSOTROS .ENLACE:hover {
+	text-decoration: none;
+	letter-spacing: 3px;
+	border-bottom: 1px solid var(--purple-light);
+}
+
+/* ------------------------- */
+/* Productos */
+/* ------------------------- */
+.PRODUCTOS {
+	background: var(--gray-light);
+	padding: 20px;
+	margin-bottom: 60px;
+}
+
+.PRODUCTOS .TITULO {
+	width: 70%;
+	font-size: 44px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.PRODUCTOS .PRODUCTO {
+	position: relative;
+	width: 100%;
+}
+
+.PRODUCTOS .OVERLAY {
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: var(--purple-light);
+	overflow: hidden;
+	transition: .5s ease;
+}
+
+.PRODUCTOS .PRODUCTO:hover .OVERLAY{
+	width: 100%;
+	opacity: .8;
+}
+
+.PRODUCTOS .PRODUCTO .OVERLAY-TEXTO {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	white-space: nowrap;
+	color: var(--white);
+	font-size: 18px;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+/*FOOTER*/
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.CONTENEDOR-FOOTER{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1 px solid #ccc;
+}
+
+.CONTENT-FOO{
+    text-align: center;
+}
+
+.CONTENT-FOO h4{
+    color: white;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.CONTENT-FOO P{
+    color: gray;
+}
+
+.TÍTULO-FINAL{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
